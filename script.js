@@ -73,7 +73,7 @@ favoriteButtons.forEach(button => {
 
         // Change icon color when favorited
         if (this.classList.contains('favorited')) {
-            this.style.color = '#C72E2E';
+            this.style.color = 'var(--primary-brand)';
             showNotification('Dodano do ulubionych!');
         } else {
             this.style.color = '';
@@ -100,11 +100,11 @@ function showNotification(message) {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: #C72E2E;
+        background: var(--primary-brand);
         color: white;
         padding: 15px 25px;
         border-radius: 8px;
-        box-shadow: 0 8px 24px rgba(199, 46, 46, 0.3);
+        box-shadow: 0 8px 24px rgba(255, 60, 199, 0.3);
         z-index: 10000;
         animation: slideIn 0.3s ease-out;
         font-weight: 600;
